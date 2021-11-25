@@ -1,0 +1,438 @@
+/* for desktop */
+@media screen and (min-width : 1180px) {
+    #main {
+        width: 100%;
+        font-family: 'Lato', sans-serif;
+        overflow: auto;
+    }
+
+    section {
+        width: 100%;
+        height: 800px;
+    }
+
+    #warning {
+        display: none;
+    }
+
+    article {
+        width: 30%;
+        height: 800px;
+        text-align: center;
+        background-color: #37445B;
+        float: left;
+    }
+
+    article h1 {
+        color: white;
+        font-size: 67px;
+        font-weight: bold;
+        margin: 10px;
+    }
+
+    article #mobileview {
+        display: none;
+    }
+
+    aside {
+        width: 55%;
+        height: 800px;
+        padding: 50px;
+        float: right;
+        display: flex;
+        justify-content: end;
+    }
+
+    aside #details {
+        /* background-color: rebeccapurple; */
+        height: 800px;
+        width: 75%;
+        /* float: right; */
+    }
+
+    aside #details nav {
+        overflow: auto;
+    }
+
+    #Msearch {
+        display: none;
+    }
+
+    #Wsearch {
+        float: right;
+    }
+
+    div#search {
+        overflow: auto;
+        border-radius: 30px;
+        background-color: whitesmoke;
+        display: inline-block;
+        width: 50%;
+        padding: 10px;
+        float: left;
+    }
+
+    #cart span {
+        background-color: rgb(181, 187, 187);
+        color: white;
+        float: right;
+        width: 20px;
+        border-radius: 20px;
+        text-align: center;
+        height: 21px;
+    }
+
+    div#cart {
+        width: 32%;
+        overflow: auto;
+        float: left;
+        padding: 10px;
+    }
+    #Wcart {
+        float: right;
+    }
+    #Mcart {
+        display: none;
+    }
+
+    #Wmenu {
+        float: right;
+        padding: 10px;
+    }
+
+    #Mmenu {
+        display: none;
+    }
+
+    #Description h1 {
+        font-size: 45px;
+        margin: 0px;
+    }
+
+    #rating {
+        color: yellow;
+        font-size: 25px;
+        margin: 10px 0px;
+    }
+
+    #varitions {
+        width: 100%;
+        display: flex;
+    }
+
+    .div1 {
+        width: 30%;
+        /* text-align: center; */
+    }
+
+    .div1 h4 {
+        margin-bottom: 10px;
+    }
+
+    .input {
+        border: 1px solid gray;
+        border-radius: 25px;
+        margin: 0px;
+        font-weight: bold;
+        text-align: center;
+        width: 60%;
+        height: 40px;
+    }
+
+    #addtocart {
+        overflow: auto;
+        padding: 20px 0px;
+    }
+
+    #addtocart h2 {
+        width: 45%;
+        padding: 10px;
+        border-radius: 35px;
+        background-color: blue;
+        color: white;
+        float: left;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #black,
+    #white,
+    #brown {
+        width: 20%;
+        height: 20px;
+        border-radius: 20px;
+        float: left;
+        margin: 10px 6px;
+    }
+
+    footer {
+        width: 250px;
+        overflow: auto;
+        position: absolute;
+        left: 150px;
+        top: 750px;
+        display: flex;
+    }
+
+    footer img {
+        /* background-color: #af3535; */
+    }
+
+    #bg {
+        background-color: rgb(50, 51, 51);
+        border-radius: 50%;
+        text-align: center;
+        width: 29px;
+        height: 24px;
+        margin-right: 11px;
+        padding-top: 4px;
+    }
+}
+
+/* warning */
+@media screen and (min-width : 601px) and (max-width : 1179px) {
+    section {
+        display: none;
+    }
+
+    #warning {
+        display: block;
+        color: red;
+        text-align: center;
+    }
+}
+
+/* for mobile */
+@media screen and (max-width : 600px) {
+    #main {
+        width: 100%;
+        font-family: 'Lato', sans-serif;
+        overflow: auto;
+    }
+
+    section {
+        width: 100%;
+        height: 800px;
+    }
+
+    #warning {
+        display: none;
+    }
+
+    article {
+        width: 100%;
+        height: 100px;
+        background-color: #37445B;
+        float: left;
+    }
+
+    div#content {
+        margin-top: 55px;
+        padding: 0px 20px;
+    }
+
+    article h1 {
+        color: white;
+        font-size: x-large;
+        font-weight: bold;
+        margin: 0px;
+        display: inline-block;
+    }
+
+    article #webview {
+        display: none;
+    }
+
+    article #mobileview {
+        display: block;
+        position: absolute;
+        top: 175px;
+        left: 90px;
+    }
+
+    aside {
+        width: 100%;
+        height: 800px;
+        float: right;
+    }
+
+    aside #details {
+        /* background-color: rebeccapurple; */
+        height: 800px;
+        width: 100%;
+    }
+
+    aside #details nav {
+        width: 70%;
+        float: right;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+    }
+
+    #Wsearch {
+        display: none;
+        float: right;
+    }
+
+    #Wmenu {
+        display: none;
+    }
+
+    #Mmenu {
+        display: block;
+        float: right;
+        padding: 10px;
+    }
+
+
+    div#search {
+        overflow: auto;
+        border-radius: 30px;
+        display: inline-block;
+        width: 48%;
+        padding: 10px;
+        float: left;
+    }
+
+
+    #cart span {
+        background-color: rgb(181, 187, 187);
+        color: white;
+        float: right;
+        width: 20px;
+        border-radius: 20px;
+        text-align: center;
+        height: 21px;
+    }
+
+    #sp {
+        display: none;
+    }
+
+    img#Wcart {
+        display: none;
+    }
+
+    div#cart {
+        width: 20%;
+        overflow: auto;
+        float: left;
+        padding: 10px;
+    }
+
+    #Description h1 {
+        font-size: 24px;
+        margin: 0px;
+    }
+
+    #rating {
+        color: yellow;
+        font-size: 25px;
+        margin: 10px 0px;
+        position: absolute;
+        top: 330px;
+        left: 10px;
+    }
+
+    #price {
+        position: absolute;
+        top: 370px;
+        left: 10px;
+    }
+
+    #info {
+        position: absolute;
+        top: 430px;
+        width: 90%;
+        left: 10px;
+    }
+
+    #varitions {
+        width: 93%;
+        position: absolute;
+        top: 530px;
+        left: 10px;
+    }
+
+    .div1 {
+        width: 30%;
+        float: left;
+        /* text-align: center; */
+    }
+
+    .div1 h4 {
+        margin-bottom: 10px;
+    }
+
+    .input {
+        border: 1px solid gray;
+        border-radius: 25px;
+        margin: 0px;
+        font-weight: bold;
+        text-align: center;
+        width: 90%;
+        height: 40px;
+    }
+
+    #addtocart {
+        width: 90%;
+        position: absolute;
+        top: 620px;
+        left: 10px;
+        padding: 20px 0px;
+
+    }
+
+    #addtocart h2 {
+        width: 40%;
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 35px;
+        background-color: blue;
+        color: white;
+        float: left;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #black,
+    #white,
+    #brown {
+        width: 20%;
+        height: 20px;
+        border-radius: 20px;
+        float: left;
+        margin: 10px 6px;
+    }
+
+    p#last {
+        position: absolute;
+        top: 690px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    footer {
+        width: 50%;
+        overflow: auto;
+        position: absolute;
+        left: 110px;
+        top: 750px;
+        display: flex;
+    }
+
+    footer img {
+        /* background-color: #af3535; */
+    }
+
+    #bg {
+        background-color: rgb(181, 187, 187);
+        border-radius: 50%;
+        text-align: center;
+        width: 29px;
+        height: 24px;
+        margin-right: 20px;
+        padding-top: 4px;
+    }
+}
