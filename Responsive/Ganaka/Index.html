@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/30ecc0edf3.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        #main {
+            overflow: auto;
+        }
+
+        header {
+            /* border: 2px solid red; */
+            height: 133px;
+            width: 99%;
+            position: fixed;
+            z-index: 2;
+            margin-top: -8px;
+            background-color: white;
+        }
+
+        .topdiv {
+            background-color: #68c1fd;
+            height: 20px;
+            padding: 4px;
+        }
+
+        i#menubar {
+            display: none;
+        }
+
+        i#whatsapp {
+            position: fixed;
+            left: 1251px;
+            z-index: 1;
+            color: rgb(73, 230, 112);
+            top: 300px;
+        }
+
+        #div1 {
+            float: left;
+        }
+
+        #div2 {
+            float: right;
+        }
+
+        .logo {
+            /* border: 2px solid green; */
+            height: 101px;
+        }
+
+        #future {
+            color: #68c1fd
+        }
+
+        #discover {
+            font-size: 44px;
+            margin-top: 0px;
+        }
+
+        nav {
+            float: right;
+            width: 700px;
+            /* border: 2px solid red; */
+        }
+
+        ul {
+            /* border: 2px solid green; */
+            width: 650px;
+            height: 30px;
+        }
+
+        li {
+            color: #686767;
+            font-family: "Quicksand", Sans-serif;
+            font-size: 14px;
+            font-weight: 550;
+            line-height: 20px;
+            padding: 0px 12px 0px 12px;
+            float: left;
+            list-style: none;
+            padding: 11px;
+        }
+
+        img#img2 {
+            width: 100%;
+            height: 430px;
+        }
+
+        #short {
+            position: absolute;
+            z-index: 1;
+            top: 181px;
+            right: 272px;
+            color: white;
+            font-size: 30px;
+        }
+
+        #bar {
+            width: 81px;
+            height: 4px;
+            position: absolute;
+            left: 641px;
+            background-image: linear-gradient(to right, blue, rgb(83, 189, 231));
+            box-shadow: 1px 2px 9px 3px #68c1fd;
+        }
+
+        #content {
+            width: 94%;
+            margin: auto;
+            height: 570px;
+            /* border: 2px solid red; */
+            margin-top: 120px;
+        }
+
+        #box1 {
+            border: 2px solid gray;
+            width: 288px;
+            height: 560px;
+            float: left;
+            padding: 3px;
+            text-align: center;
+
+        }
+
+        #box2 {
+            border: 2px solid gray;
+            width: 288px;
+            height: 415px;
+            float: left;
+            text-align: center;
+            padding: 3px;
+            margin: 0px 20px 0px 20px;
+        }
+
+        #box3 {
+            border: 2px solid gray;
+            width: 288px;
+            height: 415px;
+            float: left;
+            text-align: center;
+            padding: 3px;
+            margin: 0px 20px 0px 0px;
+        }
+
+        #box4 {
+            border: 2px solid gray;
+            width: 288px;
+            height: 385px;
+            float: left;
+            text-align: center;
+            padding: 3px;
+            margin: 0px 0px 0px 0px;
+        }
+
+        #p1 {
+            color: #838080;
+            font-family: serif;
+            width: 221px;
+            margin-left: 32px;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+
+        #p2 {
+            color: #838080;
+            font-family: serif;
+            width: 221px;
+            margin-left: 32px;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+
+        #p3 {
+            color: #838080;
+            font-family: serif;
+            width: 221px;
+            margin-left: 32px;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+
+        #p4 {
+            color: #838080;
+            font-family: serif;
+            width: 221px;
+            margin-left: 32px;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+
+        #anc1 {
+            position: relative;
+            top: 50px;
+            font-size: 22px;
+            color: #68c1fd;
+        }
+
+        #anc2 {
+            position: relative;
+            top: 30px;
+            font-size: 22px;
+            color: #68c1fd;
+        }
+
+        #anc3 {
+            position: relative;
+            top: 30px;
+            font-size: 22px;
+            color: #68c1fd
+        }
+
+        #anc4 {
+            position: relative;
+            top: 28px;
+            font-size: 22px;
+            color: #68c1fd;
+        }
+
+        #btn2 {
+            border-radius: 28px;
+            border: none;
+            width: 217px;
+            height: 54px;
+            padding: 5px;
+            margin-top: 55px;
+            font-size: 16px;
+            box-shadow: 0px 9px 27px 1px skyblue;
+            background-color: #68c1fd;
+        }
+
+        section#container {
+            background: rgba(122, 150, 243, 0.2);
+            width: 100%;
+            position: relative;
+            top: 22px;
+            margin: 0 auto;
+            overflow: auto;
+        }
+
+        #head1 {
+            font-size: 45px;
+            margin-left: 29px;
+            margin-top: 81px;
+            font-style: normal;
+        }
+
+        #pa {
+            width: 544px;
+            margin-left: 29px;
+            font-size: 18px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        }
+
+        .A {
+            float: left;
+        }
+
+        button#read {
+            border-radius: 49px;
+            padding: 15px;
+            width: 181px;
+            border: none;
+            margin-top: -5px;
+            font-size: 18px;
+            margin-left: 29px;
+            background-color: #acddfc;
+            box-shadow: 1px 5px 10px 9px skyblue;
+        }
+
+        #img3 {
+            width: 624px;
+            height: 515px;
+        }
+
+        .Ac {
+            position: relative;
+            display: flex;
+            margin-top: -135px;
+        }
+
+        section.queen {
+            width: 100%;
+            height: 180px;
+        }
+
+        h1#head23 {
+            font-size: 33px;
+            text-align: center;
+        }
+
+        p#pm {
+            margin-top: -25px;
+            font-size: 18px;
+        }
+
+        section#continent1 {
+            border: 2px solid white;
+            background: rgba(118, 8, 6, 0.1);
+            width: 99%;
+            height: 800px;
+        }
+
+        h1#k {
+            margin: 28px 0px 0px 0px;
+            font-size: 34px;
+        }
+
+        .abc {
+            margin-bottom: 53px;
+        }
+
+        section#ad {
+            width: 97%;
+            height: 298px;
+            margin: auto;
+        }
+
+        .z1 {
+            border: 2px solid gray;
+            width: 295px;
+            float: left;
+            padding: 2px;
+            height: 292px;
+            text-align: center;
+        }
+
+        .z2 {
+            border: 2px solid gray;
+            width: 295px;
+            float: left;
+            margin: 0px 0px 0px 22px;
+            height: 292px;
+            padding: 2px;
+            text-align: center;
+
+        }
+
+        .z3 {
+            border: 2px solid gray;
+            width: 295px;
+            float: left;
+            margin: 0px 23px 0px 23px;
+            height: 282px;
+            padding: 2px;
+            text-align: center;
+
+        }
+
+        .z4 {
+            border: 2px solid gray;
+            width: 295px;
+            float: left;
+            height: 292px;
+            padding: 2px;
+            text-align: center;
+
+        }
+
+        p#p5 {
+            font-size: 20px;
+            width: 244px;
+            margin-left: 23px;
+        }
+
+        section#cbz {
+            width: 97%;
+            height: 303px;
+            position: relative;
+            top: 20px;
+            margin: auto;
+        }
+
+        .below {
+            border: 2px solid gray;
+            width: 49%;
+            height: 300px;
+            text-align: center;
+            float: left;
+        }
+
+        .hero {
+            border: 2px solid gray;
+            float: left;
+            text-align: center;
+            height: 300px;
+            margin: 0px 0px 0px 17px;
+            width: 49%;
+        }
+
+        p#p6 {
+            font-size: 21px;
+            width: 542px;
+            margin-left: 38px;
+        }
+
+        section#tvs {
+            width: 99%;
+            height: 385px;
+        }
+
+        .mla1 {
+            border: 2px solid gray;
+            width: 400px;
+            height: 200px;
+            float: left;
+        }
+
+        .mla2 {
+            border: 2px solid gray;
+            width: 400px;
+            margin: 0px 53px 0px 54px;
+            height: 200px;
+            float: left;
+        }
+
+        .mla3 {
+            border: 2px solid gray;
+            width: 400px;
+            height: 200px;
+            float: left;
+        }
+
+        h1#cnt {
+            /* text-align: center; */
+            margin-top: 50px;
+            font-size: 38px;
+        }
+
+        .m1 {
+            width: 291px;
+            float: right;
+            margin: 32px 0px 0px 10px;
+        }
+
+        .m2 {
+            width: 291px;
+            float: right;
+            margin: 32px 0px 0px 10px;
+        }
+
+        .m3 {
+            width: 291px;
+            float: right;
+            margin: 32px 0px 0px 10px;
+        }
+
+        #icons {
+            float: left;
+            color: rgb(45, 193, 252);
+            margin-top: 48px;
+            margin-left: 20px;
+        }
+
+        form {
+            margin-left: 150px;
+            margin-bottom: 50px;
+        }
+
+        input[type="text"] {
+            width: 765px;
+            height: 41px;
+        }
+
+        button#btn22 {
+            background: skyblue;
+            width: 117px;
+            height: 50px;
+            padding: 4px;
+            font-size: 19px;
+            border-radius: 25px;
+        }
+
+        textarea {
+            width: 762px;
+        }
+
+        .footer {
+            background-color: #D7532D;
+            opacity: 0.95;
+            width: 100%;
+            height: 450px;
+            margin: 0 auto;
+        }
+
+        #footcnt {
+            margin-top: 40px;
+            width: 278px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        div#list1 {
+            width: 301px;
+            float: left;
+            color: white;
+            font-family: "Open Sans", Sans-serif;
+            font-size: 17px;
+            padding: 6px;
+            height: 433px;
+        }
+
+        div#list2 {
+            width: 300px;
+            height: 433px;
+            padding: 6px;
+            font-family: "Open Sans", Sans-serif;
+            font-size: 17px;
+            color: white;
+            float: left;
+        }
+
+        div#list3 {
+            width: 300px;
+            height: 433px;
+            padding: 6px;
+            font-family: "Open Sans", Sans-serif;
+            font-size: 17px;
+            color: white;
+            float: left;
+        }
+
+        div#list4 {
+            width: 318px;
+            float: left;
+            font-family: "Open Sans", Sans-serif;
+            padding: 6px;
+            font-size: 17px;
+            color: white;
+            height: 433px;
+        }
+
+        ul#footerul {
+            width: 97%;
+        }
+
+        table {
+            margin-top: 46px;
+        }
+
+        p#keep {
+            margin-top: 51px;
+        }
+
+        th {
+            padding: 0px 33px 9px 2px;
+        }
+
+        ul#footcntul {
+            width: 132px;
+            height: 300px;
+            position: relative;
+            top: 43px;
+        }
+
+        i#menubar1 {
+            display: none;
+        }
+
+        li#ulli {
+            direction: ltr;
+            margin: 0px;
+            color: white;
+            padding: 11px 0px 6px 0px;
+            font-size: 21px;
+        }
+
+        div#right {
+            margin-left: 44px;
+            margin-top: 8px;
+            float: left;
+        }
+
+        div#left {
+            float: right;
+            margin-right: 20px;
+        }
+
+        i#iii {
+            padding: 8px 0px 0px 22px;
+        }
+
+
+
+        /* for mobile mode */
+        @media only screen and (max-width:640px) {
+            header {
+                height: 123px;
+                width: 99%;
+                position: fixed;
+                z-index: 2;
+                margin-top: -8px;
+                background-color: white;
+            }
+
+            i#whatsapp {
+                position: fixed;
+                left: 1251px;
+                z-index: 1;
+                color: rgb(73, 230, 112);
+                top: 300px;
+            }
+
+            .topdiv {
+                background-color: #68c1fd;
+                height: 20px;
+                width: 88%;
+                padding: 4px;
+            }
+
+            #div1 {
+                float: left;
+                width: 239px;
+                font-size: 12px;
+            }
+
+            #div2 {
+                float: right;
+            }
+
+            .logo {
+                height: 101px;
+            }
+
+            #headnav {
+                display: none;
+            }
+
+            i#menubar {
+                float: right;
+                position: absolute;
+                margin-top: 14px;
+                margin-left: 36px;
+            }
+
+            article#imgback {
+                width: 100%;
+                height: 150px;
+            }
+
+            img#img2 {
+                width: 100%;
+                height: 220px;
+            }
+
+            p#short {
+                width: 283px;
+                height: 50px;
+                left: 27px;
+                top: 128px;
+                position: absolute;
+                z-index: 2;
+                font-size: 12px;
+            }
+
+            .top {
+                margin-top: 86px;
+            }
+
+            #discover {
+                font-size: 25px;
+                margin-top: -10px;
+            }
+
+            #future {
+                color: #68c1fd;
+                font-size: 26px;
+            }
+
+            #bar {
+                width: 81px;
+                height: 4px;
+                position: absolute;
+                left: 137px;
+                background-image: linear-gradient(to right, blue, rgb(83, 189, 231));
+                box-shadow: 1px 2px 9px 3px #68c1fd;
+            }
+
+            #content {
+                width: 94%;
+                margin: auto;
+                height: 570px;
+                /* border: 2px solid red; */
+                margin-top: 77px;
+            }
+
+            #box1 {
+                border: 2px solid gray;
+                width: 310px;
+                height: 560px;
+                float: left;
+                padding: 3px;
+                text-align: center;
+            }
+
+            #box2 {
+                border: 2px solid gray;
+                width: 310px;
+                height: 457px;
+                float: left;
+                text-align: center;
+                padding: 3px;
+                margin: 25px 0px 0px 0px;
+            }
+
+            #box3 {
+                border: 2px solid gray;
+                width: 310px;
+                height: 462px;
+                float: left;
+                text-align: center;
+                padding: 3px;
+                margin: 25px 0px 0px 0px;
+            }
+
+            #box4 {
+                border: 2px solid gray;
+                width: 310px;
+                height: 473px;
+                float: left;
+                text-align: center;
+                padding: 3px;
+                margin: 26px 0px 0px 0px;
+            }
+
+            #btn2 {
+                border-radius: 28px;
+                border: none;
+                width: 241px;
+                height: 54px;
+                padding: 5px;
+                margin-top: 49px;
+                font-size: 20px;
+                box-shadow: 4px 11px 27px 15px skyblue;
+                background-color: #68c1fd;
+            }
+
+            section#container {
+                background: rgba(122, 150, 243, 0.2);
+                width: 100%;
+                height: 677px;
+                position: relative;
+                top: 32px;
+                margin: 0 auto;
+                overflow: auto;
+            }
+
+            #head1 {
+                font-size: 29px;
+                margin-left: 29px;
+                margin-top: 60px;
+                font-style: normal;
+            }
+
+            .A {
+                float: left;
+            }
+
+            #pa {
+                width: 295px;
+                margin-left: 29px;
+                font-size: 14px;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            }
+
+            .Ab {
+                position: relative;
+                top: 135px;
+            }
+
+            .Ac {
+                position: absolute;
+                margin-top: 0px;
+            }
+
+            #img3 {
+                width: 324px;
+                height: 240px;
+                position: absolute;
+                bottom: -100px;
+            }
+
+            section.queen {
+                width: 100%;
+                height: 180px;
+                position: absolute;
+                margin-top: 33px;
+            }
+
+            h1#head23 {
+                font-size: 33px;
+                text-align: center;
+            }
+
+            p#pm {
+                margin-top: -25px;
+                font-size: 13px;
+            }
+
+            section#continent1 {
+                border: 2px solid white;
+                background: rgba(118, 8, 6, 0.1);
+                width: 99%;
+                margin-top: 222px;
+                height: 2100px;
+            }
+
+            .abc {
+                margin-bottom: 53px;
+            }
+
+            h1#k {
+                margin: 28px 0px 0px 0px;
+                font-size: 27px;
+            }
+
+            p#cm {
+                font-size: 11px;
+            }
+
+            section#ad {
+                width: 97%;
+                height: 298px;
+                margin: auto;
+            }
+
+            .z1 {
+                border: 2px solid gray;
+                width: 322px;
+                float: left;
+                padding: 2px;
+                height: 298px;
+                text-align: center;
+            }
+
+            p#p5 {
+                font-size: 11px;
+                width: 272px;
+                margin-left: 23px;
+            }
+
+            .z2 {
+                border: 2px solid gray;
+                width: 321px;
+                float: left;
+                margin: 27px 0px 0px 0px;
+                height: 292px;
+                padding: 2px;
+                text-align: center;
+            }
+
+            .z3 {
+                border: 2px solid gray;
+                width: 320px;
+                float: left;
+                margin: 25px 0px 0px 0px;
+                height: 282px;
+                padding: 2px;
+                text-align: center;
+            }
+
+            .z4 {
+                border: 2px solid gray;
+                width: 320px;
+                float: left;
+                height: 292px;
+                padding: 2px;
+                margin: 25px 0px 0px 0px;
+                text-align: center;
+            }
+
+            section#cbz {
+                width: 99%;
+                height: 303px;
+                position: relative;
+                top: 20px;
+                margin: auto;
+            }
+
+            .below {
+                border: 2px solid gray;
+                width: 97%;
+                height: 300px;
+                text-align: center;
+                font-size: 12px;
+                float: left;
+            }
+
+            p#p6 {
+                font-size: 9px;
+                width: 292px;
+                margin-left: 20px;
+            }
+
+            .hero {
+                border: 2px solid gray;
+                float: left;
+                text-align: center;
+                height: 300px;
+                margin: 25px 0px 0px 0px;
+                width: 97%;
+            }
+
+            section#tvs {
+                width: 99%;
+                height: 890px;
+            }
+
+            .mla1 {
+                border: 2px solid gray;
+                width: 335px;
+                height: 225px;
+                float: left;
+            }
+
+            .m1 {
+                width: 230px;
+                float: right;
+                margin: 33px 0px 0px 10px;
+            }
+
+            .mla2 {
+                border: 2px solid gray;
+                width: 336px;
+                margin: 25px 0px 0px 0px;
+                height: 225px;
+                float: left;
+            }
+
+            .m2 {
+                width: 206px;
+                float: right;
+                margin: 32px 0px 0px 10px;
+            }
+
+            .mla3 {
+                border: 2px solid gray;
+                width: 337px;
+                height: 225px;
+                margin: 25px 0px 0px 0px;
+                float: left;
+            }
+
+            .m3 {
+                width: 228px;
+                float: right;
+                margin: 32px 0px 0px 10px;
+            }
+
+            section#formdiv {
+                width: 79%;
+                margin: auto;
+                height: 864px;
+                border: 2px solid;
+            }
+
+            form {
+                margin-left: 29px;
+                margin-bottom: 50px;
+            }
+
+            input[type="text"] {
+                width: 222px;
+                height: 41px;
+            }
+
+            textarea {
+                width: 229px;
+            }
+
+            button#btn22 {
+                background: skyblue;
+                width: 117px;
+                height: 50px;
+                padding: 4px;
+                font-size: 19px;
+                border-radius: 25px;
+            }
+
+            .footer {
+                background-color: #D7532D;
+                opacity: 0.95;
+                width: 99%;
+                height: 1130px;
+                margin: 0 auto;
+            }
+
+            ul#footerul {
+                width: 97%;
+            }
+
+            div#list1 {
+                width: 293px;
+                float: left;
+                color: white;
+                font-family: "Open Sans", Sans-serif;
+                font-size: 15px;
+                padding: 6px;
+                margin-left: -19px;
+                height: 313px;
+            }
+
+            div#list2 {
+                width: 293px;
+                height: 158px;
+                padding: 6px;
+                font-family: "Open Sans", Sans-serif;
+                font-size: 17px;
+                margin-left: -17px;
+                color: white;
+                float: left;
+            }
+
+            i#menubar1 {
+                position: relative;
+                left: 244px;
+            }
+
+            div#list3 {
+                width: 286px;
+                height: 349px;
+                padding: 6px;
+                position: relative;
+                left: -20px;
+                font-family: "Open Sans", Sans-serif;
+                font-size: 17px;
+                color: white;
+                float: left;
+            }
+
+            div#list4 {
+                width: 285px;
+                float: left;
+                position: relative;
+                left: -21px;
+                font-family: "Open Sans", Sans-serif;
+                padding: 6px;
+                font-size: 17px;
+                color: white;
+                height: 433px;
+            }
+
+            ul#footcntul {
+                display: none;
+            }
+
+            footer {
+                width: 99%;
+                height: 47px;
+                margin-top: 1px;
+            }
+
+            div#right {
+                margin-left: 1px;
+                position: relative;
+                top: -161px;
+                float: left;
+            }
+
+            div#left {
+                float: right;
+                position: relative;
+                top: -160px;
+                margin-right: 10px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="container">
+        <header>
+            <div class="topdiv">
+                <div id="div1"> <i class="fas fa-phone-alt"></i>&nbsp; (+91)9663742371 &nbsp;<i
+                        class="far fa-envelope fa-1xxx"></i>&nbsp;&nbsp;info@ganakalabs.com</div>
+                <div id="div2"><i style="color: white;" class="fab fa-facebook-f"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                        style="color: white;" class="fab fa-twitter"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i
+                        style="color: white;" class="fab fa-pinterest-p"></i>&nbsp;&nbsp;&nbsp;</div>
+            </div>
+            <div class="logo">
+                <img class="img1" src="https://www.ganakalabs.com/wp-content/uploads/2021/09/ganakalab-logo-1.jpg"
+                    alt="" id="img1">
+                <nav id="headnav">
+                    <ul>
+                        <li style="color: skyblue;">HOME</li>
+                        <li>ABOUT US</li>
+                        <li>SERVICE</li>
+                        <li>RECRUITMENT</li>
+                        <li>CAREERS</li>
+                        <li>CONTACT</li>
+                        <li><button
+                                style="background-color: skyblue; border: none; width:77px; height: 25px;">HIRING</button>
+                        </li>
+                    </ul>
+                </nav>
+                <i id="menubar" class="fas fa-bars fa-3x"></i>
+            </div>
+            <i id="whatsapp" class="fab fa-whatsapp-square fa-4x"></i>
+        </header>
+        <article id="imgback">
+            <img id="img2"
+                src="https://media.gettyimages.com/photos/people-traveling-concepts-traditional-porto-travel-boat-as-tourist-picture-id1290700915?b=1&k=20&m=1290700915&s=170667a&w=0&h=0ZDtUtOPVcqMSu7IR2WLI3pfkw3v9QvFaZDbRJuSTDc="
+                alt="">
+            <p id="short">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "There are no shortcuts to
+                Anything worth doing <br>we will be with you enduring the journey to conquer
+                your goals</p>
+        </article>
+        <section id="discover">
+            <center>
+                <div class="top">
+                    <h3 id="future">FEATURE</h3>
+                    <h1 id="discover">Discover Our Services</h1>
+                    <div id="bar"></div>
+                </div>
+            </center>
+            <div id="content">
+                <div id="box1">
+                    <i style="margin-top:50px; color: #D7532D;" class="far fa-question-circle fa-2x"></i>
+                    <h2
+                        style="font-family: 'Raleway', arial, sans-serif; font-size: 21px; font-weight:550; color: rgb(58, 55, 55); text-shadow: 1px 3px 5px 5px gray;">
+                        Why Choose Ganaka <br> Labs?</h2>
+                    <p id="p1">We Ganaka Engineers have a built-in passion for technology and are also soft skilled
+                        Engineers. We use the latest frameworks, adapting to efficient methodologies, building programs
+                        and so on</p>
+                    <a id="anc1" href="#">READ MORE
+                        <span class="aux-icon fa fa-angle-right "></span>
+                    </a>
+                </div>
+                <div id="box2">
+                    <span style="margin-top:50px; color: #D7532D;" class="aux-ico fas fa-store-alt fa-2x"> </span>
+                    <h2
+                        style="font-family: 'Raleway', arial, sans-serif; font-size: 21px; font-weight:550; color: rgb(58, 55, 55); text-shadow: 1px 3px 5px 5px gray;">
+                        Retail</h2>
+                    <p id="p2">Our retail solutions provide complete control over the POS,Store Operations, Inventory
+                    </p>
+                    <a id="anc2" href="#">READ MORE
+                        <span class="aux-icon fa fa-angle-right"></span>
+                    </a>
+                </div>
+                <div id="box3">
+                    <i style="margin-top:50px; color: #D7532D;" class="fas fa-shopping-cart fa-2x"></i>
+                    <h2
+                        style="font-family: 'Raleway', arial, sans-serif; font-size: 21px; font-weight:550; color: rgb(58, 55, 55); text-shadow: 1px 3px 5px 5px gray;">
+                        Ecommerce</h2>
+                    <p id="p3">We are one of the best eCommerce website development companies delivering</p>
+                    <a id="anc3" href="#">READ MORE
+                        <span class="aux-icon fa fa-angle-right"></span>
+                    </a>
+                </div>
+                <div id="box4">
+                    <span style="margin-top:50px; color: #D7532D;" class="aux-ico fas fa-paper-plane fa-2x"> </span>
+                    <h2
+                        style="font-family: 'Raleway', arial, sans-serif; font-size: 21px; font-weight:550; color: rgb(58, 55, 55); text-shadow: 1px 3px 5px 5px gray;">
+                        Recruitment Service</h2>
+                    <p id="p4">We offer a wide range of customized, high-quality, research-based</p>
+                    <a id="anc4" href="#">READ MORE
+                        <span class="aux-icon fa fa-angle-right"></span>
+                    </a>
+                </div>
+            </div>
+            <center> <button id="btn2">VIEW ALL SERVICES</button></center>
+        </section>
+
+        <section id="container">
+            <div class="Ab">
+                <h1 id="head1">About Us</h1>
+
+                <div class="A">
+                    <p id="pa">Ganaka Labs is an IT solutions provider, bearing in-depth knowledge of technologies and
+                        locking
+                        decades’ experience intends for "Smart You through Smart Us" to digitize small, medium and large
+                        business.</p>
+                    <br>
+                    <p id="pa">Carrying the legacy and habit of serving the top-notch services, Ganaka is shouldering
+                        the
+                        responsibility to help the corporates to outshine competitors, execute business automation and
+                        perform digital transformations and cope with digital disruption</p>
+                    <br>
+                    <br>
+                    <button id="read">READ MORE</button>
+                </div>
+            </div>
+
+            <div class="Ac">
+                <img id="img3" src="https://www.ganakalabs.com/wp-content/uploads/2021/08/home-about-ban-768x640.png"
+                    alt="">
+            </div>
+
+        </section>
+
+
+
+
+        <section class="queen">
+            <h1 id="head23">Technologies We Use</h1>
+            <br>
+            <center>
+                <p id="pm">Technology is our very nature, we drive solutions that are independent of technology so that
+                    our
+                    customers
+                    can choose the most beneficial technology stack at any given point of <br> time</p>
+            </center>
+        </section>
+
+        <section id="continent1">
+            <div class="abc">
+                <center>
+                    <h1 id="k">Our Main Services</h1>
+                </center>
+                <center>
+                    <p id="cm">We build iOS and Android mobile apps with the right technology stack focusing on
+                        usability of
+                        the apps</p>
+                </center>
+            </div>
+
+            <section id="ad">
+                <div class="z1">
+                    <span style="color:#68c1fd; margin-top:30px;" class="aux-ico fa fa-building fa-4x"> </span> <br>
+                    <h2>Enterprise Apps</h2>
+                    <p id="p5">We build comprehensive mobility solutions customized to business needs to maximize
+                        productivity</p>
+
+                </div>
+                <div class="z2">
+                    <span style="color:#68c1fd; margin-top:30px;" class="aux-ico fas fa-mobile-alt fa-4x"> </span> <br>
+                    <h2>Mobility</h2>
+                    <p id="p5">We provide advanced digital Marketing service to deliver the desired results in every
+                        campign
+                        run</p>
+
+                </div>
+                <div class="z3">
+                    <i style="color:#68c1fd; margin-top:30px;" class="fas fa-shopping-cart fa-4x"></i> <br>
+                    <h2>eCommerce</h2>
+                    <p id="p5">We build customizable solutions helping add value to your customers.</p>
+
+                </div>
+                <div class="z4">
+                    <i style="color:#68c1fd; margin-top:30px;" class="fas fa-desktop fa-4x"></i> <br>
+                    <h2>Digital Marketing</h2>
+                    <p id="p5">We strategize and create a perfect Digital Marketing Strategy for businesses delivering
+                        both
+                        long</p>
+
+                </div>
+            </section>
+
+            <section id="cbz">
+                <div class="below">
+                    <span style="margin:30px 0px 25px 0px; color: #68c1fd;" class="aux-ico fas fa-users fa-4x"> </span>
+                    <br>
+                    <h2>Recruitment</h2>
+                    <p id="p6">We deliver client-focused,multi-disiplinary solutions to complex challenges and
+                        opportunities
+                        providing the best talent solutions ,business and technology consulting with innovative models
+                        that
+                        adress the industry</p>
+                </div>
+
+                <div class="hero">
+                    <i style="margin:30px 0px 25px 0px; color: #68c1fd;"
+                        class="fab fa-acquisitions-incorporated fa-4x"></i> <br>
+                    <h2>Careers</h2>
+                    <p id="p6">We are always looking for efficient candidates to join our team!We strongly encourage you
+                        to
+                        submit your resume to our database for future postions.We will contact you if there are any
+                        suitable
+                        openings matching your skills and career aspirations</p>
+
+                </div>
+            </section>
+        </section>
+        <section id="tvs">
+            <center>
+                <h1 id="cnt">Contact Us</h1>
+            </center>
+            <div class="mla1">
+                <div id="icons"><i class="fas fa-map-marker-alt fa-4x"></i></div>
+                <div class="m1">
+                    <h2>Our Address</h2>
+                    <p>NO 27,1st floor, <br>
+                        1st Bmainroad,Sanjeevini nagar, <br> Moodalapalya,Banglore-56oo72</p>
+                </div>
+            </div>
+
+            <div class="mla2">
+                <div id="icons"><i class="far fa-envelope fa-4x"></i></div>
+                <div class="m2">
+                    <h2>Email Us</h2>
+                    <p>info@ganakalabs.com contact@ganakalabs.com hr@ganakalabs.com</p>
+                </div>
+            </div>
+
+            <div class="mla3">
+                <div id="icons"><i class="fas fa-mobile-alt fa-4x"></i></div>
+                <div class="m3">
+                    <h2>Contact Number</h2>
+                    <p>+91 966 347 2371</p>
+                </div>
+            </div>
+        </section>
+        <section id="formdiv">
+            <form action="">
+                <label for="" style="width: 600px;">
+                    <h2>Your name</h2>
+                </label>
+                <br>
+                <input type="text"><br>
+
+                <label for="">
+                    <h2>Your email</h2>
+                </label>
+                <br>
+                <input type="text"><br>
+
+                <label for="">
+                    <h2>Your Contact No</h2>
+                </label>
+                <br>
+                <input type="text"><br>
+
+                <label for="">
+                    <h2>Subject</h2>
+                </label>
+                <br>
+                <input type="text"><br>
+
+                <label for="">
+                    <h2>Your message(optional)</h2>
+                </label>
+                <br>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+
+                <br><br>
+                <button id="btn22">SUBMIT</button>
+            </form>
+        </section>
+        <div class="footer">
+            <ul id="footerul">
+                <div id="list1">
+                    <img id="footcnt" src="https://www.ganakalabs.com/wp-content/uploads/2021/09/ganakalab-logo-1.jpg"
+                        alt="">
+                    <p>NO 27 , 1st floor, <br>
+                        1st B main road,Sanjeevini Nagar, <br>
+                        Moodalapalya, Bangalore-560072
+                    </p>
+                    <br>
+                    <p>Phone: +91 966 374 2371
+                        Email: info@ganakalabs.com</p>
+                </div>
+
+                <div id="list2">
+                    <h2 id="footcnt">MAIN MENU</h2>
+                    <ul id="footcntul">
+                        <li id="ulli" style="color: skyblue;">Home</li>
+                        <li id="ulli">About Us</li>
+                        <li id="ulli">Services</li>
+                        <li id="ulli">Recruitment</li>
+                        <li id="ulli">Careers</li>
+                        <li id="ulli">Contact Us </li>
+                        <li id="ulli" style="width: 250px; height: 20px; background-color: yellowgreen;">Hiring</li>
+                    </ul>
+                    <i id="menubar1" class="fas fa-bars fa-3x"></i>
+
+                </div>
+
+                <div id="list3">
+                    <h2 id="footcnt">WORKING HOURS</h2>
+                    <table>
+                        <tr>
+                            <th>MONDAY </th>
+                            <td>9:00am-5:00pm</td>
+                        </tr>
+                        <tr>
+                            <th> TUESDAY </th>
+                            <td>9:00am-5:00pm</td>
+                        </tr>
+                        <tr>
+                            <th> WEDNESDAY </th>
+                            <td>9:00am-5:00pm</td>
+                        </tr>
+                        <tr>
+                            <th> THURSDAY </th>
+                            <td>9:00am-5:00pm</td>
+                        </tr>
+                        <tr>
+                            <th> FRIDAY </th>
+                            <td>9:00am-5:00pm</td>
+                        </tr>
+                        <tr>
+                            <th>SATURDAY </th>
+                            <td>CLOSED</td>
+                        </tr>
+                        <tr>
+                            <th>SUNDAY </th>
+                            <td>CLOSED</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="list4">
+                    <h2 id="footcnt">SIGN UP</h2>
+                    <p id="keep">Keep me up to date with content,updates,and offers from ganaka labs</p>
+                    <div id="parent">
+                        <input type="email" name="" placeholder="Enter your Email Address"
+                            style="width: 280px; height: 30px;">
+                    </div>
+                </div>
+            </ul>
+        </div>
+        <footer>
+            <div id="right">@2021 GANAKA LABS</div>
+            <div id="left">
+                <i id="iii" class="fab fa-facebook-f"></i>
+                <i id="iii" class="fab fa-twitter"></i>
+                <i id="iii" class="fab fa-google-plus-g"></i>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
